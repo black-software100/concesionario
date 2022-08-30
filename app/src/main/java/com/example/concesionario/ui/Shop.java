@@ -1,9 +1,13 @@
-package com.example.myapplication.ui;
+package com.example.concesionario.ui;
 
 import android.app.DatePickerDialog;
 import android.database.Cursor;
 import android.os.Build;
 import android.os.Bundle;
+
+import androidx.annotation.RequiresApi;
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,17 +17,13 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.annotation.RequiresApi;
-import androidx.fragment.app.Fragment;
-
-import com.example.myapplication.R;
-import com.example.myapplication.capaEntidad.CE_Carro;
+import com.example.concesionario.R;
 import com.example.myapplication.capaEntidad.CE_Factura;
-
 import java.util.Calendar;
 
 
 public class Shop extends Fragment {
+
     View view;
     EditText edtFactura,edtFecha,edtplaca,edtMarca,edtModelo,edtValor;
     CheckBox cbx;
@@ -195,16 +195,16 @@ public class Shop extends Fragment {
         Codigo = edtFactura.getText().toString();
         eliminar = Carro.anulado(Codigo);
         switch (eliminar){
-        case 0:
-               Toast.makeText(getContext(), "Error app", Toast.LENGTH_SHORT).show();
+            case 0:
+                Toast.makeText(getContext(), "Error app", Toast.LENGTH_SHORT).show();
                 break;
             case 1:
-               Toast.makeText(getContext(), "Desactivado carro", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Desactivado carro", Toast.LENGTH_SHORT).show();
                 break;
-           case 2:
+            case 2:
                 Toast.makeText(getContext(), "Error al desactivar", Toast.LENGTH_SHORT).show();
         }
-       Limpiar();
+        Limpiar();
     }
     public void Limpiar(){
         edtFactura.setText("");
@@ -213,6 +213,6 @@ public class Shop extends Fragment {
         edtMarca.setText("");
         edtModelo.setText("");
         edtValor.setText("");
-       cbx.setChecked(false);
+        cbx.setChecked(false);
     }
 }

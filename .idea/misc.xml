@@ -3,12 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/juane/Documents/app/src/main/res/layout/activity_index.xml" value="0.25" />
-        <entry key="..\:/Users/juane/Documents/app/src/main/res/layout/activity_main.xml" value="0.35104166666666664" />
-        <entry key="..\:/Users/juane/Documents/app/src/main/res/layout/activity_main2.xml" value="0.25" />
-        <entry key="..\:/Users/juane/Documents/app/src/main/res/layout/fragment_home.xml" value="0.33" />
-        <entry key="..\:/Users/juane/Documents/app/src/main/res/layout/fragment_shop.xml" value="0.35104166666666664" />
-        <entry key="..\:/Users/juane/Documents/app/src/main/res/menu/bottom_nav_menu.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/juane/Documents/consecionario/app/src/main/res/drawable/ic_iconmonstr_github_1.xml" value="0.1" />
+        <entry key="..\:/Users/juane/Documents/consecionario/app/src/main/res/layout/activity_index.xml" value="0.25" />
+        <entry key="..\:/Users/juane/Documents/consecionario/app/src/main/res/layout/activity_main.xml" value="0.29347826086956524" />
+        <entry key="..\:/Users/juane/Documents/consecionario/app/src/main/res/layout/fragment_github.xml" value="0.1636271529888551" />
+        <entry key="..\:/Users/juane/Documents/consecionario/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/juane/Documents/consecionario/app/src/main/res/layout/fragment_shop.xml" value="0.25" />
+        <entry key="..\:/Users/juane/Documents/consecionario/app/src/main/res/menu/bottom_nav_menu.xml" value="0.21481481481481482" />
       </map>
     </option>
   </component>

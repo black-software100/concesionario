@@ -1,4 +1,4 @@
-package com.example.myapplication.ui;
+package com.example.concesionario.ui;
 
 import android.database.Cursor;
 import android.os.Bundle;
@@ -13,15 +13,13 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.myapplication.R;
-import com.example.myapplication.capaEntidad.CE_Carro;
-import com.google.android.material.textfield.TextInputLayout;
+import com.example.concesionario.R;
 
+import com.example.myapplication.capaEntidad.CE_Carro;
 
 public class Home extends Fragment {
     View view;
     EditText edt1,edt2,edt3,edt4;
-    TextInputLayout lay1,lay2,lay3,lay4;
     CheckBox cbx;
     Button btn1,btn2,btn3,btn4;
 
@@ -152,22 +150,22 @@ public class Home extends Fragment {
         }
     }
     public void Eliminar(){
-       CE_Carro Carro =new CE_Carro(getContext());
-       String Placa;
-       int eliminar;
-       Placa = edt1.getText().toString();
-       eliminar = Carro.anulado(Placa);
-       switch (eliminar){
-           case 0:
-               Toast.makeText(getContext(), "Error app", Toast.LENGTH_SHORT).show();
-               break;
-           case 1:
-               Toast.makeText(getContext(), "Desactivado carro", Toast.LENGTH_SHORT).show();
-               break;
-           case 2:
-               Toast.makeText(getContext(), "Error al desactivar", Toast.LENGTH_SHORT).show();
-       }
-       Limpiar();
+        CE_Carro Carro =new CE_Carro(getContext());
+        String Placa;
+        int eliminar;
+        Placa = edt1.getText().toString();
+        eliminar = Carro.anulado(Placa);
+        switch (eliminar){
+            case 0:
+                Toast.makeText(getContext(), "Error app", Toast.LENGTH_SHORT).show();
+                break;
+            case 1:
+                Toast.makeText(getContext(), "Desactivado carro", Toast.LENGTH_SHORT).show();
+                break;
+            case 2:
+                Toast.makeText(getContext(), "Error al desactivar", Toast.LENGTH_SHORT).show();
+        }
+        Limpiar();
     }
     public void Limpiar(){
         edt1.setText("");
