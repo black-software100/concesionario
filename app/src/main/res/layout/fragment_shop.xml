@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Shop">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layfactura"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="100dp"
+                    android:hint="Codigo Factura">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editfactura"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layfecha"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="100dp"
+                    android:hint="Fecha">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ediFecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layPlaca_s"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="188dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:hint="@string/placa">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editPlaca"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btnBuscar_s"
+                        android:layout_width="147dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="@color/azul_oscuro"
+                        android:text="@string/buscar"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editMarca"
+                        android:layout_width="118dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:enabled="false"
+                        android:hint="@string/marca"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/editModelo"
+                        android:layout_width="118dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:enabled="false"
+                        android:hint="@string/modelo"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/editvalor"
+                        android:layout_width="118dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:enabled="false"
+                        android:hint="@string/valor"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cbxAxtivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="false"
+                    android:text="@string/activo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnConsultar"
+                        android:layout_width="147dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:backgroundTint="@color/azul_oscuro"
+                        android:text="@string/consultar"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btnGuardar_s"
+                        android:layout_width="147dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:backgroundTint="@color/verde"
+                        android:text="@string/guardar"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnAnular_s"
+                        android:layout_width="147dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:backgroundTint="@color/rojo"
+                        android:text="@string/anular"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btnLimpiar_s"
+                        android:layout_width="147dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:textColor="@color/black"
+                        android:backgroundTint="@color/white"
+                        android:text="@string/limpiar" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>
